@@ -1,0 +1,11 @@
+""" перевод из 10 с.с. в 5 с.с"""
+
+for i in range(3, 31):
+    x = i
+    number = ""
+    while x // 5:
+        number += str(x % 5)
+        x //= 5
+    number += str(x)
+    if number[-1] == '3':
+        print(number[::-1], i)
