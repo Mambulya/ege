@@ -15,7 +15,8 @@ def NumberOFdivisors(n):
     while d * d < n:
         if n % d == 0:  # is this d a real divisor?
             divisorsNumber += 2  # every divisor has their own couple
-            if divisorsNumber > 5:
+            if divisorsNumber > 5:   # ТАК КАК ДЕЛИТЕЛЯ ВСЕГО 3 (уникальных), ТО НЕТ СМЫСЛА РАССМАТРИВАТЬ ЧИСЛА, У КОТОРЫХ ИХ БОЛЬШЕ
+                # 5 - это вместе с 1 и самим числом
                 break
             allDivisors.append(d)
             allDivisors.append(n // d)
