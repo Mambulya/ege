@@ -4,6 +4,8 @@ def isPrime(n):
     :param n: number
     :return: bool
     """
+    if n == 0:          # zero is NOT a prime number
+        return False
     d = 2   # every number has at least 2 divisors (1 and n)
 
     while d * d <= n:
